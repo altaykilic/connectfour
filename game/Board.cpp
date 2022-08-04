@@ -16,6 +16,17 @@ char Board::get(int x, int y) const {
 	return _board[x][y];
 }
 
+// returns a pointer of a duplicate of the original board
+char** Board::get_board() const {
+	char ret[7][6];
+	for(int i=0; i<7; i++){
+		for(int j=0; j<6; j++){
+			ret[i][j] = _board[i][j];
+		}
+	}
+	return ret;
+}
+
 // return 0 -> fail
 // return 1 -> success
 // return 2 -> success, game ended

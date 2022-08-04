@@ -4,3 +4,6 @@ void AI::setup(char empty, char p1, char p2){
 	_sym[2] = p2;
 }
 
+int AI::make_move(char** board) const {
+	
+}

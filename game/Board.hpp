@@ -15,6 +15,7 @@ public:
 	
 	bool get_turn() const;
 	char get(int, int) const;
+	char** get_board() const;
 	short drop(int);
 	
 	void print();
